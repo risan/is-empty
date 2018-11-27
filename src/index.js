@@ -1,5 +1,13 @@
 import isPlainObj from "@risan/is-plain-obj";
 
+const isString = value => typeof value === "string";
+
+const isNumber = value => typeof value === "number";
+
+const isArray = value => Array.isArray(value);
+
+const isMapOrSet = value => value instanceof Map || value instanceof Set;
+
 /**
  * Check if the given value is empty or not.
  *
@@ -7,31 +15,23 @@ import isPlainObj from "@risan/is-plain-obj";
  * @return {Boolean}
  */
 const isEmpty = value => {
+  let empty = false;
+
   if (value === null || value === undefined) {
-    return true;
+    empty = true;
+  } else if (isString(value)) {
+    empty = value.trim().length === 0;
+  } else if (isNumber(value)) {
+    empty = Number.isNaN(value);
+  } else if (isArray(value)) {
+    empty = value.length === 0;
+  } else if (isMapOrSet(value)) {
+    empty = value.size === 0;
+  } else if (isPlainObj(value)) {
+    empty = Object.keys(value).length === 0;
   }
 
-  if (typeof value === "string") {
-    return value.trim().length === 0;
-  }
-
-  if (typeof value === "number") {
-    return Number.isNaN(value);
-  }
-
-  if (Array.isArray(value)) {
-    return value.length === 0;
-  }
-
-  if (value instanceof Map || value instanceof Set) {
-    return value.size === 0;
-  }
-
-  if (isPlainObj(value)) {
-    return Object.keys(value).length === 0;
-  }
-
-  return false;
+  return empty;
 };
 
 export default isEmpty;

@@ -61,20 +61,22 @@ isEmpty(0);
 isEmpty(-123.5);
 isEmpty(Infinity);
 isEmpty([1, 2, 3]);
-isEmpty(new Set([1, 2]));
 isEmpty({ foo: "bar" });
-isEmpty(parseInt);
-isEmpty(new Date());
+isEmpty(new Set([1, 2]));
 
 const myMap = new Map();
 myMap.set("foo", "bar");
 isEmpty(myMap);
 
-class Person {}
-isPlainObj(new Person()); // FALSE
-
+// Function will always return FALSE:
 const myFunction = () => "foo";
-isPlainObj(myFunction); // FALSE
+isPlainObj(myFunction);
+isEmpty(parseInt);
+
+// Instance of class will always return FALSE:
+class Person {}
+isPlainObj(new Person());
+isEmpty(new Date());
 ```
 
 If you load the library directly on the browser, it's available under the `isEmpty` name.

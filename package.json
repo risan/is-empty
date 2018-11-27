@@ -1,7 +1,7 @@
 {
   "name": "@risan/is-empty",
   "description": "Tiny function to check if a value is empty or not",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "homepage": "https://github.com/risan/is-empty#readme",
   "author": {

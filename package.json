@@ -1,6 +1,6 @@
 {
   "name": "@risan/is-empty",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Tiny function to check if a value is empty or not",
   "keywords": [
     "object",

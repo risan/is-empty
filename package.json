@@ -1,37 +1,34 @@
 {
   "name": "@risan/is-empty",
+  "version": "1.0.2",
   "description": "Tiny function to check if a value is empty or not",
-  "version": "1.0.1",
-  "license": "MIT",
-  "homepage": "https://github.com/risan/is-empty#readme",
-  "author": {
-    "name": "Risan Bagja Pradana",
-    "email": "risanbagja@gmail.com",
-    "url": "https://bagja.net"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/risan/is-empty.git"
-  },
-  "bugs": {
-    "url": "https://github.com/risan/is-empty/issues"
-  },
   "keywords": [
     "object",
     "object-literal",
     "plain-object"
   ],
+  "homepage": "https://github.com/risan/is-empty#readme",
+  "bugs": {
+    "url": "https://github.com/risan/is-empty/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Risan Bagja Pradana",
+    "email": "risanbagja@gmail.com",
+    "url": "https://bagja.net"
+  },
   "main": "dist/is-empty.cjs.js",
   "browser": "dist/is-empty.umd.js",
-  "engines": {
-    "node": ">=8.0.0"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/risan/is-empty.git"
   },
   "scripts": {
     "build": "NODE_ENV=build rollup -c",
     "lint": "eslint ./",
     "lint-fix": "eslint ./ --fix",
-    "test": "NODE_ENV=test jest",
-    "prepublishOnly": "npm run lint && npm run test && npm run build"
+    "prepublishOnly": "npm run lint && npm run test && npm run build",
+    "test": "NODE_ENV=test jest"
   },
   "dependencies": {
     "@risan/is-plain-obj": "1.x"
@@ -53,5 +50,8 @@
     "rollup-plugin-commonjs": "^9.2.0",
     "rollup-plugin-node-resolve": "^3.4.0",
     "rollup-plugin-terser": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=8.0.0"
   }
 }

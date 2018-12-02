@@ -5,13 +5,13 @@ import { terser } from "rollup-plugin-terser";
 import pkg from "./package.json";
 
 export default [
-  // CommonJS
   {
     input: "src/index.js",
     output: {
       file: pkg.main,
       format: "cjs"
     },
+    external: ["@risan/is-plain-obj"],
     plugins: [
       resolve(),
       commonjs(),
@@ -23,6 +23,7 @@ export default [
             "@babel/env",
             {
               modules: false,
+              useBuiltIns: "usage",
               targets: "node 8"
             }
           ]
@@ -30,8 +31,6 @@ export default [
       })
     ]
   },
-
-  // UMD
   {
     input: "src/index.js",
     output: {
@@ -47,7 +46,6 @@ export default [
       })
     ]
   },
-
   {
     input: "src/index.js",
     output: {

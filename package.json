@@ -1,11 +1,9 @@
 {
   "name": "@risan/is-empty",
-  "version": "1.0.3",
-  "description": "Tiny function to check if a value is empty or not",
+  "version": "1.0.4",
+  "description": "Check if a value is empty or not.",
   "keywords": [
-    "object",
-    "object-literal",
-    "plain-object"
+    "is-empty"
   ],
   "homepage": "https://github.com/risan/is-empty#readme",
   "bugs": {

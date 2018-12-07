@@ -1,31 +1,26 @@
 # Is Empty
 
-[![Build Status](https://flat.badgen.net/travis/risan/is-empty)](https://travis-ci.org/risan/is-empty)
-[![Test Coverage](https://flat.badgen.net/codeclimate/coverage/risan/is-empty)](https://codeclimate.com/github/risan/is-empty)
-[![Maintainability](https://flat.badgen.net/codeclimate/maintainability/risan/is-empty)](https://codeclimate.com/github/risan/is-empty)
-[![Latest Stable Version](https://flat.badgen.net/npm/v/@risan/is-empty)](https://www.npmjs.com/package/@risan/is-empty)
-[![Node Version](https://flat.badgen.net/npm/node/@risan/is-empty)](https://www.npmjs.com/package/@risan/is-empty)
-[![Code Style: Prettier](https://flat.badgen.net/badge/code%20style/prettier/ff69b4)](https://github.com/prettier/prettier)
-[![License](https://flat.badgen.net/npm/license/@risan/is-empty)](https://github.com/risan/is-empty/blob/master/LICENSE)
+[![Build Status](https://badgen.net/travis/risan/is-empty)](https://travis-ci.org/risan/is-empty)
+[![Test Covarage](https://badgen.net/codecov/c/github/risan/is-empty)](https://codecov.io/gh/risan/is-empty)
+[![Greenkeeper](https://badges.greenkeeper.io/risan/is-empty.svg)](https://greenkeeper.io)
+[![Latest Version](https://badgen.net/npm/v/@risan/is-empty)](https://www.npmjs.com/package/@risan/is-empty)
 
-Tiny function to check if a value is empty or not.
+Check if a value is empty or not.
 
 ## Installation
 
 ```bash
 $ npm install @risan/is-empty
-
-# Or if you use Yarn
-$ yarn add @risan/is-empty
 ```
 
-Use this library directly on the browser:
+### CDN
+
+The library is available over a CDN:
 
 ```html
-<!-- For development -->
 <script src="https://unpkg.com/@risan/is-empty@latest/dist/is-empty.umd.js"></script>
 
-<!-- Minified version for production -->
+<!-- Or the minified version -->
 <script src="https://unpkg.com/@risan/is-empty@latest/dist/is-empty.umd.min.js"></script>
 ```
 
@@ -90,4 +85,4 @@ window.isEmpty(new Date()); // FALSE
 
 ## License
 
-MIT © [Risan Bagja Pradana](https://bagja.net)
+[MIT](https://github.com/risan/is-empty/blob/master/LICENSE) © [Risan Bagja Pradana](https://bagja.net)

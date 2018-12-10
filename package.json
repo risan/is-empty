@@ -1,6 +1,6 @@
 {
   "name": "@risan/is-empty",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Check if a value is empty or not.",
   "keywords": [
     "is-empty"

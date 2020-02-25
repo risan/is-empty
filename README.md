@@ -2,7 +2,6 @@
 
 [![Build Status](https://badgen.net/travis/risan/is-empty)](https://travis-ci.org/risan/is-empty)
 [![Test Covarage](https://badgen.net/codecov/c/github/risan/is-empty)](https://codecov.io/gh/risan/is-empty)
-[![Greenkeeper](https://badges.greenkeeper.io/risan/is-empty.svg)](https://greenkeeper.io)
 [![Latest Version](https://badgen.net/npm/v/@risan/is-empty)](https://www.npmjs.com/package/@risan/is-empty)
 
 Check if a value is empty or not.
